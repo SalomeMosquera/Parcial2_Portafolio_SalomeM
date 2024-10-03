@@ -1,0 +1,131 @@
+.container-home {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* .contenido-home {
+  flex: 1;
+} */
+
+.contenido-home h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contenido-home h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: rgb(255, 223, 223);
+}
+
+.contenido-home p {
+  width: 85%;
+}
+
+.imagenes-home {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* gap: 2rem; */
+  margin-top: 3rem;
+}
+
+.foto {
+  object-fit: cover;
+  border-radius: 35%;
+  border: 0.1rem solid var(--secundary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  /* margin-left: 0.5rem; */
+}
+
+.imagenes-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  justify-content: center;
+  padding: 10px;
+}
+
+.redes:hover {
+  color: var(--secundary-color);
+}
+
+@media (max-width: 1025px) {
+  .contenido-home h2 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 550;
+    margin-bottom: 0.5rem;
+  }
+
+  .foto {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contenido-home h3 {
+    font-size: 1.3rem;
+    font-weight: 520;
+    margin-top: 0.1rem;
+    color: rgb(255, 223, 223);
+  }
+  .contenido-home p {
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-home {
+    flex-direction: column;
+  }
+  .container-home h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .contenido-home p {
+    width: 100%;
+    margin-bottom: 0.1rem;
+  }
+
+  .contenido-home h3 {
+    text-align: center;
+  }
+  .foto {
+    margin: 0.1rem 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenido-home h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .contenido-home h3 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .contenido-home p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .foto {
+    width: 250px;
+    height: 250px;
+  }
+}

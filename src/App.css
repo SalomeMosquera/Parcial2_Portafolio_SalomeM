@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: black;
+  --secundary-color: red;
+  --bg-cards: rgba(121, 55, 55, 0.25);
+  --border-cards: rgb(255, 110, 110);
+  --cards-hover: rgb(125, 0, 0);
+  --bg-img-cards: rgb(80, 34, 34);
+  --primary-text-color: white;
+  --secondary-text-color: rgb(255, 223, 223);
+  --border-text-titulo: rgba(218, 218, 218, 0.21);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+  background-color: rgba(0, 0, 0, 0.875);
+}
+
+.contenedor-general {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 1300px) {
+  .contenedor-general {
+    padding: 0 1.5rem;
+  }
+}
+
+/*HOME*/
+.container-home {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contenido-home h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contenido-home h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: var(--secondary-text-color);
+}
+
+.contenido-home p {
+  width: 85%;
+}
+
+.imagenes-home {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* gap: 2rem; */
+  margin-top: 3rem;
+}
+
+.foto {
+  object-fit: cover;
+  border-radius: 35%;
+  border: 0.1rem solid var(--secundary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.imagenes-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  justify-content: center;
+  padding: 10px;
+}
+
+.redes:hover {
+  color: var(--secundary-color);
+}
+
+/*HABILIDADES*/
+
+/* .container-habilidades {
+  height: 5rem;
+} */
+
+.container-habilidades {
+  border-top: 0.2rem solid var(--secundary-color);
+  margin-top: 3rem;
+}
+
+.container-habilidades h1 {
+  margin-top: 0.1rem;
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.contenido-habilidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding: 0.25rem 2rem 2rem 2rem;
+}
+
+.habilidad {
+  flex: 1;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat (1, 1fr);
+  border-radius: 0.85rem;
+  border: 1.5px solid var(--border-cards);
+  padding: 1rem;
+  text-align: center;
+  background: var(--bg-cards);
+  backdrop-filter: blur(1rem);
+  position: relative;
+}
+
+.habilidad h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+.habilidad ul {
+  margin-top: 0.1rem;
+  padding-left: 7rem;
+}
+
+.habilidad li {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.imagen-habilidad {
+  width: 5.5rem;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-img-cards);
+  border-radius: 0.65rem;
+  border: 1.5px solid var(--border-cards);
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+/*PROYECTOS*/
+.container-proyectos h1 {
+  margin-top: 0.1rem;
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 0.5rem 1rem;
+  margin-bottom: 0.1rem;
+  border-bottom: 4px solid var(--border-text-titulo);
+}
+
+.parrafo-descriptivo {
+  margin-top: 0.1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.contenido-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.proyecto {
+  border-radius: 0.85rem;
+  border: 1.5px solid var(--border-cards);
+  padding: 1rem;
+  text-align: center;
+  background: var(--bg-cards);
+  backdrop-filter: blur(1rem);
+}
+
+.proyecto:hover {
+  background-color: var(--cards-hover);
+}
+
+.proyecto img:hover {
+  width: 16rem;
+  height: 16rem;
+}
+
+.proyecto h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  padding: 0.1rem 0rem 1rem 0rem;
+  margin: 0.1rem 0rem 1rem 0rem;
+  border-bottom: 3px solid rgba(185, 81, 81, 0.525);
+}
+
+.proyecto:hover h3 {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+/*GIT IGNORE*/
+
+.container-gitIgnore h1 {
+  margin-top: 0.1rem;
+  font-size: 2.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 1rem 0.5rem 1rem;
+  margin-bottom: 0.1rem;
+  border-bottom: 4px solid var(--border-text-titulo);
+}
+
+.contenido-gitIgnore {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.pasos-gitIgnore {
+  border-radius: 0.85rem;
+  border: 1.5px solid var(--border-cards);
+  margin-top: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+  background: var(--bg-cards);
+  backdrop-filter: blur(1rem);
+}
+
+.contenido-gitIgnore h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.contenido-gitIgnore p {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding-left: 2rem;
+  margin-bottom: 0.2rem;
+  color: var(--secondary-text-color);
+}
+
+.contenido-gitIgnore li {
+  text-align: left;
+}
+
+.imagen-gitIgnore {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-img-cards);
+  border-radius: 0.65rem;
+  border: 1.5px solid var(--border-cards);
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1025px) {
+  /*HOME*/
+  .contenido-home h2 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 550;
+    margin-bottom: 0.5rem;
+  }
+
+  .foto {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contenido-home h3 {
+    font-size: 1.3rem;
+    font-weight: 520;
+    margin-top: 0.1rem;
+  }
+  .contenido-home p {
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+  }
+  /*HABILIDADES*/
+
+  .container-habilidades h1 {
+    font-size: 2.2rem;
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .habilidad {
+    margin-left: 1.5rem;
+  }
+
+  .habilidad h3 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+  .habilidad ul {
+    padding-left: 5rem;
+  }
+  .habilidad li {
+    font-size: 1.2rem;
+  }
+
+  .imagen-habilidad {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /*PROYECTOS*/
+  .contenido-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .proyecto h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /*HOME*/
+  .container-home {
+    flex-direction: column;
+  }
+  .container-home h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .contenido-home p {
+    width: 100%;
+    margin-bottom: 0.1rem;
+  }
+
+  .contenido-home h3 {
+    text-align: center;
+  }
+  .foto {
+    margin: 0.1rem 0 0.5rem 0;
+  }
+  /*HABILIDADES*/
+
+  .container-habilidades h1 {
+    font-size: 2rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  .contenido-habilidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .habilidad {
+    flex: 1;
+    display: grid;
+    grid-gap: 0.5rem;
+  }
+
+  .habilidad h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .habilidad ul {
+    margin-top: 0.1rem;
+    padding-left: 3.5rem;
+    padding-right: 4rem;
+  }
+  .habilidad li {
+    font-size: 1rem;
+  }
+
+  .imagen-habilidad {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  /*PROYECTOS*/
+  .contenido-proyectos {
+    grid-template-columns: 1fr;
+  }
+  .container-proyectos h1 {
+    font-size: 2.2rem;
+  }
+
+  .proyecto h3 {
+    font-weight: 600;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /*HOME*/
+  .contenido-home h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .contenido-home h3 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .contenido-home p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .foto {
+    width: 250px;
+    height: 250px;
+  }
+
+  /*PROYECTOS*/
+  .container-proyectos h1 {
+    text-align: center;
+  }
+
+  /*GIT IGNORE*/
+  .contenido-gitIgnore {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,149 @@
+:root {
+  --primary-color: black;
+  --secundary-color: red;
+  --bg-cards: rgba(121, 55, 55, 0.25);
+  --border-cards: rgb(255, 110, 110);
+  --cards-hover: rgb(125, 0, 0);
+  --bg-img-cards: rgb(80, 34, 34);
+  --primary-text-color: white;
+  --secondary-text-color: rgb(255, 223, 223);
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.95);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur (50px);
+}
+
+.navbar-container {
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+}
+
+.navbar-container ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.navbar-container li {
+  margin: 0 1.5rem;
+}
+
+.navbar-item {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  position: relative;
+}
+
+.navbar-item::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(
+    90deg,
+    var(--border-cards) 0%,
+    var(--secundary-color) 100%
+  );
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.4rem;
+  opacity: 0;
+}
+.navbar-item:hover {
+  font-weight: 600;
+}
+
+.navbar-item:hover::before {
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+.active {
+  color: var(--secundary-color);
+  font-weight: 600;
+}
+
+.menu-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--primary-text-color);
+  background: linear-gradient(
+    90deg,
+    var(--border-cards) -0.13%,
+    var(--secundary-color) 99.87%
+  );
+  line-height: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn:hover {
+  color: var(--border-cards);
+  background: var(--primary-color);
+  border: 1px solid var(--border-cards);
+}
+
+@media (max-width: 425px) {
+  .logo {
+    width: 3.8rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 769px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar-container ul {
+    display: none;
+  }
+
+  /* .navbar-container ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+} */
+
+  /* .navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    flex-grow: 1;
+    min-width: auto;
+  } */
+}
+
+@media (max-width: 1325px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+}
