@@ -17,7 +17,7 @@ function Projects() {
             <a href="https://github.com/SalomeMosquera/clase2_web.git">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png"
-                alt=""
+                alt="PRINCIPIOS HTML"
                 width="200px"
                 height="200px"
               />
@@ -30,7 +30,7 @@ function Projects() {
             <a href="https://github.com/SalomeMosquera/Ejercicio1.git">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/2696/2696459.png"
-                alt=""
+                alt="PÁGINA RESPONSIVE"
                 width="200px"
                 height="200px"
               />
@@ -43,7 +43,7 @@ function Projects() {
             <a href="https://github.com/edwinmgallego/clase-practica-css-jueves/tree/sMosquera">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1698/1698579.png"
-                alt=""
+                alt="FORMULARIO"
                 width="200px"
                 height="180px"
               />
@@ -56,7 +56,7 @@ function Projects() {
             <a href="https://github.com/SalomeMosquera/EjercicioWeb_Clase8">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/2620/2620549.png"
-                alt=""
+                alt="NÚMERO MENOR"
                 width="200px"
                 height="200px"
               />
@@ -69,7 +69,7 @@ function Projects() {
             <a href="https://github.com/SalomeMosquera/EjercicioContador">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1999/1999088.png"
-                alt=""
+                alt="CONTADOR"
                 width="200px"
                 height="200px"
               />
@@ -79,10 +79,10 @@ function Projects() {
           <div className="proyecto">
             <h3>CARDS EN REACT</h3>
 
-            <a href="https://github.com/SalomeMosquera/Ejercicio_React_Clase10t">
+            <a href="https://github.com/SalomeMosquera/Ejercicio_React_Clase10">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/5230/5230216.png"
-                alt=""
+                alt="CARDS EN REACT"
                 width="200px"
                 height="200px"
               />

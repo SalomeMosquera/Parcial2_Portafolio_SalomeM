@@ -282,6 +282,17 @@ body {
   left: -1.5rem;
 }
 
+footer {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: var(--secundary-color);
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 /*RESPONSIVE*/
 
 @media (max-width: 1025px) {

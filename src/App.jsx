@@ -19,6 +19,13 @@ function App() {
             <Route path="/git-ignore" element={<GitIgnore />} />
           </Routes>
         </div>
+
+        <footer>
+          <p>
+            @ Desarrollo de Experciencias Multimedia Web - Universidad Autónoma
+            de Occidente, 2024
+          </p>
+        </footer>
       </Router>
     </>
   );
