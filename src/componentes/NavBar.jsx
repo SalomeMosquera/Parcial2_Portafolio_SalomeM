@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
+
 function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <img className="logo" src="./assets/Logo.png" alt="" />
-          <ul>
+          <ul className={`menu-items ${isMenuOpen ? "open" : ""}`}>
             <li>
               <NavLink
                 className="navbar-item"
                 to="/"
-                // exact
+                exact
                 activeClassName="active"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Sobre Mi
               </NavLink>
@@ -24,6 +31,7 @@ function NavBar() {
                 className="navbar-item"
                 to="/proyectos"
                 activeClassName="active"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Proyectos
               </NavLink>
@@ -34,15 +42,16 @@ function NavBar() {
                 className="navbar-item"
                 to="/git-ignore"
                 activeClassName="active"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Git Ignore
               </NavLink>
             </li>
           </ul>
-          {/* <input type="checkbox" class="toggler"></input> */}
-          <button className="menu-btn" onClick={() => {}}>
+
+          <button className="menu-btn" onClick={toggleMenu}>
             <span
-              class={"material-symbols-outlined"}
+              className={"material-symbols-outlined"}
               style={{ fontSize: "1.8rem" }}
             >
               menu

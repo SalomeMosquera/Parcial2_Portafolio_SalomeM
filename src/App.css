@@ -416,6 +416,11 @@ body {
     font-weight: 600;
     line-height: 2rem;
   }
+
+  .proyecto img:hover {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 @media (max-width: 600px) {
